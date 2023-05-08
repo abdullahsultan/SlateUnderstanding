@@ -13,5 +13,11 @@ UCLASS()
 class SLATEUNDERSTANDING_API ASlateUnderstandingHUD : public AHUD
 {
 	GENERATED_BODY()
+
+public:
+	TSharedPtr<class SCompoundWidgetSlate> CompountWidgetSlate;
+	TSharedPtr<class SWidget> ContainerWidget;
+
+	virtual void BeginPlay() override;
 	
 };
