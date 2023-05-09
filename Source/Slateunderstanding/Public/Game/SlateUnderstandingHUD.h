@@ -19,5 +19,7 @@ public:
 	TSharedPtr<class SWidget> ContainerWidget;
 
 	virtual void BeginPlay() override;
-	
+
+	void RemoveSlate();
+
 };
